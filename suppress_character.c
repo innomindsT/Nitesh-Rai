@@ -8,7 +8,7 @@ int main(void)
 	char c;
 	int j,i = 0;
 	printf("enter a string\n");
-	scanf("%s",str);
+	scanf("%[^\n]s",str);
 	
 	__fpurge(stdin);
 	printf("enter character to suppressed\n");
