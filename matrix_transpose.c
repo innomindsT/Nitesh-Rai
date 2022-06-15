@@ -9,7 +9,7 @@ int main(void)
 	printf("enter row and column of the matrix\n");
 	scanf("%d %d",&m,&n);
 
-	int arr1[m][n],arr2[m][n];
+	int arr1[30][30],arr2[30][30];
 	printf("enter elements of the array\n");
 
 	for(i = 0 ;i < m ; ++i)
@@ -30,10 +30,10 @@ int main(void)
 
         printf("\n");
         }
-
-	for(i = 0 ; i < m ; ++i)
+                                                      // transpose of matrix..
+	for(i = 0 ; i < n ; ++i)
 	{
-		for(j = 0 ; j < n ; ++j)
+		for(j = 0 ; j < m ; ++j)
 		{
 		arr2[i][j]=arr1[j][i];
 		
@@ -43,18 +43,13 @@ int main(void)
 
 	printf("elements of matrix after transpose is \n");
 
-	for (i = 0 ; i < m ; ++i)
+	for (i = 0 ; i < n ; ++i)
 	{
-		for( j = 0 ; j < n ; ++j)
+		for( j = 0 ; j < m ; ++j)
 		printf("%d\t",arr2[i][j]);	
 	
 	printf("\n");
 	}	
-
-
-
-
-
 
 return 0;
 }	
